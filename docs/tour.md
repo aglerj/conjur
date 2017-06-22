@@ -1,6 +1,6 @@
 ---
 title: Quick Tour
-layout: page
+layout: 2-col
 ---
 
 {% include toc.md key='prerequisites' %}

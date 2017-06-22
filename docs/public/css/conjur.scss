@@ -46,8 +46,8 @@ body {
 
 html {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	line-height: 1.5em;
+	font-size: 16px;
+	line-height: 1.8em;
 	color: $conjur-text;
 	font-weight: 300;
 }
@@ -107,6 +107,20 @@ a {
 	background: -webkit-linear-gradient(top, #0071c7 0%,#11b5e4 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #0071c7 0%,#11b5e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071c7', endColorstr='#11b5e4',GradientType=0 ); /* IE6-9 */
+}
+
+.sidebar-secondary {
+	padding: 2rem;
+}
+@media (min-width: 48em) {
+  .sidebar-secondary {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
 }
 
 .sidebar-about img {
