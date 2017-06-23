@@ -1,0 +1,54 @@
+---
+---
+
+/*
+*         ______              _           
+*        / ____/___  ____    (_)_  _______
+*       / /   / __ \/ __ \  / / / / / ___/
+*      / /___/ /_/ / / / / / / /_/ / /    
+*      \____/\____/_/ /_/_/ /\__,_/_/     
+*                      /___/               
+*                                        
+*/
+  
+
+
+// ***********************
+// Global resets
+// ***********************
+
+body {
+	background-color: $conjur-bg;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	color: $conjur-text;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: $conjur-text;
+    text-rendering: optimizeLegibility;
+}
+
+pre {
+	background-color: #f7f7f7;
+}
+
+code {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: $conjur-teal;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.landing-img {
+	margin: 50px 0;
+}
