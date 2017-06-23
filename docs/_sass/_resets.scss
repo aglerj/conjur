@@ -5,12 +5,13 @@
 body {
   background-color: $conjur-bg;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.8rem;
 }
 
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.8em;
+  line-height: 1.8rem;
   color: $conjur-text;
   font-weight: 300;
 }
@@ -25,6 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 
 pre {
   background-color: #f7f7f7;
+  padding: 1.5rem;
+  border: none;
+  margin: 1rem 0;
 }
 
 code {
@@ -61,6 +65,12 @@ code {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
+  }
+}
+
+.page {
+  h2 {
+    margin: 3rem 0 1rem 0;
   }
 }
 

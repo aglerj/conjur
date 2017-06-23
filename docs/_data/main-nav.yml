@@ -91,11 +91,11 @@ main:
         title: Cryptography
         path: /reference/cryptography.html
       
-  downloads:
-    title: Downloads
-    url: https://github.com/conjurinc/conjur/releases
+  # downloads:
+  #   title: Downloads
+  #   url: https://github.com/conjurinc/conjur/releases
     
-  github:
-    title: Github Project
-    url: https://github.com/conjurinc/conjur
+  # github:
+  #   title: Github Project
+  #   url: https://github.com/conjurinc/conjur
 
