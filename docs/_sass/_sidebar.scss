@@ -3,6 +3,11 @@
 // ***********************
 
 .sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 18rem;
   text-align: left;
   padding: 2.5rem 1rem;
   color: rgba(255,255,255,.5);
