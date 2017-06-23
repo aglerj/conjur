@@ -7,7 +7,6 @@
       {% assign open = true %}
     {% endif %}
   {% endif %}
-
 {% if item.url != null %}
   <a class="sidebar-nav-item" href="{{ item.url }}" target="_blank">
     {{ item.title }} &raquo;
@@ -18,7 +17,7 @@
   </a>
   {% if open %}
     {% assign subitems = item.items %}
-    {% include subitems.html items=subitems %}   
+    {% include subitems.html items=subitems %}
   {% endif %}
 {% else %}
   <div class="sidebar-nav-item">

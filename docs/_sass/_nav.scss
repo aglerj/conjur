@@ -2,6 +2,39 @@
 // Navigation
 // ***********************
 
+.navbar {
+	border: none;
+	border-radius: 0;
+	background: #0071c7; /* Old browsers */
+	background: -moz-linear-gradient(left, #0071c7 0%, #11b5e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #0071c7 0%,#11b5e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #0071c7 0%,#11b5e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071c7', endColorstr='#11b5e4',GradientType=1 ); /* IE6-9 */
+}
+
+
+.navbar-default {
+	.navbar-brand {
+		padding-top: 6px;
+	}
+	.navbar-nav > li > a {
+    color: #fff;
+	}
+}
+
 .nav-logo img{
 	width: 100px;
+}
+
+/* Sidebar nav */
+.nav-item {
+	display: block;
+	line-height: 1.75;
+}
+a.nav-item:hover,
+a.nav-item:focus {
+	text-decoration: underline;
+}
+.nav-item.active {
+	font-weight: bold;
 }
