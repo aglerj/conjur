@@ -42,54 +42,58 @@
       permit: Permit
       include: Include
 
-"/tutorials/integrations/ruby.html":
-  introduction: Introduction
-  setup: Setup
-  prerequisites: Prerequisites
-  configuration: Configuration
-  authentication: Authentication
-  secrets-fetching: Secrets Fetching
-  permission-checking: Permission Checking
-  webservice-authz: Webservice Authorization
-  next-steps: Next Steps
+"/tutorials.html":
+  policy: Policy
+  runtime: Runtime Integration
 
-"/tutorials/integrations/puppet.html":
-  introduction: Introduction
-  prerequisites: Prerequisites
-  overview: Overview
-  policy: Load the Policy
-  load-secret: Load the Database Password
-  host-factory-token: Create the Host Factory Token
-  manifest: Create the Manifest
-  conjur-module: Install the conjur Module
-  run-puppet: Run Puppet
+# "/tutorials/integrations/ruby.html":
+#   introduction: Introduction
+#   setup: Setup
+#   prerequisites: Prerequisites
+#   configuration: Configuration
+#   authentication: Authentication
+#   secrets-fetching: Secrets Fetching
+#   permission-checking: Permission Checking
+#   webservice-authz: Webservice Authorization
+#   next-steps: Next Steps
 
-"/tutorials/integrations/authenticators.html":
-  introduction: Introduction
-  prerequisites: Prerequisites
-  access-token: Access Tokens
-  signing-keys: Signing Keys
-  route: URL Request
-  example: Example
-  client: Client Configuration
-  summary: Summary
+# "/tutorials/integrations/puppet.html":
+#   introduction: Introduction
+#   prerequisites: Prerequisites
+#   overview: Overview
+#   policy: Load the Policy
+#   load-secret: Load the Database Password
+#   host-factory-token: Create the Host Factory Token
+#   manifest: Create the Manifest
+#   conjur-module: Install the conjur Module
+#   run-puppet: Run Puppet
 
-"/tutorials/policy/applications.html":  
-  introduction: Introduction
-  prerequisites: Prerequisites
-  setup: Setup
-  define-resources: Define Protected Resources
-  define-application: Define an Application
-  entitlement: Entitlement
-  next-steps: Next Steps
+# "/tutorials/integrations/authenticators.html":
+#   introduction: Introduction
+#   prerequisites: Prerequisites
+#   access-token: Access Tokens
+#   signing-keys: Signing Keys
+#   route: URL Request
+#   example: Example
+#   client: Client Configuration
+#   summary: Summary
 
-"/tutorials/policy/delegation.html":  
-  introduction: Introduction
-  prerequisites: Prerequisites
-  setup: Setup
-  multi-user-concepts: Delegation Concepts
-  delegate: Delegation Demonstration
-  summary: Summary
+# "/tutorials/policy/applications.html":  
+#   introduction: Introduction
+#   prerequisites: Prerequisites
+#   setup: Setup
+#   define-resources: Define Protected Resources
+#   define-application: Define an Application
+#   entitlement: Entitlement
+#   next-steps: Next Steps
+
+# "/tutorials/policy/delegation.html":  
+#   introduction: Introduction
+#   prerequisites: Prerequisites
+#   setup: Setup
+#   multi-user-concepts: Delegation Concepts
+#   delegate: Delegation Demonstration
+#   summary: Summary
 
 
 

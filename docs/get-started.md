@@ -1,6 +1,6 @@
 ---
 title: Get Started
-layout: 2-col
+layout: two-col
 ---
 
 {% include toc.md key='client' %}
