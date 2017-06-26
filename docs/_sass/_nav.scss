@@ -3,6 +3,7 @@
 // ***********************
 
 .navbar {
+	margin-bottom: 0;
 	border: none;
 	border-radius: 0;
 	background: #0071c7; /* Old browsers */
@@ -10,6 +11,14 @@
 	background: -webkit-linear-gradient(left, #0071c7 0%,#11b5e4 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #0071c7 0%,#11b5e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071c7', endColorstr='#11b5e4',GradientType=1 ); /* IE6-9 */
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	text-decoration: underline;
 }
 
 
@@ -24,6 +33,14 @@
 
 .nav-logo img{
 	width: 100px;
+}
+
+/* Search bar */
+.navbar-form {
+	padding: 0;
+}
+.form-control {
+	height: 28px;
 }
 
 /* Sidebar nav */

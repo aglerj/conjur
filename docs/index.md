@@ -1,16 +1,16 @@
 ---
 title: Community Edition
-layout: page
+layout: home
 ---
 
-Conjur is the security service for modern infrastructure, providing:
+# Conjur is the security service for modern infrastructure:
 
 * Machine identity.
 * Secrets vault.
 * Authentication and authorization APIs.
 * Integrations with popular DevOps and cloud tools.
 
-![Conjur Machine Identity](/img/conjur_docs_graphic.svg){:class="landing-img img-responsive"}
+<!-- ![Conjur Machine Identity](/img/conjur_docs_graphic.svg){:class="landing-img img-responsive"} -->
 
 # How does Conjur work?
 
