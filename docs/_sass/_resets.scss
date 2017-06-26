@@ -35,6 +35,22 @@ code {
   margin: 50px 0;
 }
 
+// ***********************
+// Buttons
+// ***********************
+
+.btn {
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background-color: $conjur-blue;
+  &:hover {
+    background-color: darken($conjur-blue,10);
+  }
+}
 
 // ***********************
 // Container

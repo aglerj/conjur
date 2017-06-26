@@ -1,6 +1,6 @@
 ---
 title: Quick Tour
-layout: two-col
+layout: sidebar
 ---
 
 {% include toc.md key='prerequisites' %}

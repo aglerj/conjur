@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-layout: two-col
+layout: sidebar
 ---
 
 {% include toc.md key='policy' %}

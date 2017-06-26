@@ -1,5 +1,5 @@
 ---
-layout: sidebar
+layout: reference
 ---
 
 <!DOCTYPE html>
@@ -13,7 +13,11 @@ layout: sidebar
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          {% include side-nav.html %}
+          <div class="sidebar-secondary">
+            <nav class="sidebar-nav">
+              {% include nav-items.md items=site.data.sidebar.main.reference.items %}
+            </nav>
+          </div>
         </div>
         <div class="col-md-9">
           <h1 class="page-title">{{ page.title }}</h1>
@@ -25,4 +29,3 @@ layout: sidebar
   </body>
   {% include footer.html %}
 </html>
-

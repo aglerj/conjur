@@ -16,9 +16,8 @@
 
 "/get-started.html":
   client: Install the Conjur Client
-  server: Create a Conjur Account
+  server: Create a Hosted Conjur Account
   login: Login
-  configure: Configure
 
 "/reference/policy.html":
   introduction: What is a Policy?
