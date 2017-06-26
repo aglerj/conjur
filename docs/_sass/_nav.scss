@@ -36,11 +36,30 @@
 }
 
 /* Search bar */
+
+.conjur-search {
+	margin-left: 1rem;
+}
+
 .navbar-form {
 	padding: 0;
 }
-.form-control {
-	height: 28px;
+.doc-search {
+	height: 25px;
+	font-size: 12px;
+	box-shadow: none;
+	border: none;
+}
+
+.btn-nav {
+	background-color: #fff;
+	color: $conjur-ltblue;
+	height: 25px;
+	font-size: 12px;
+	margin-top: 3px;
+	span {
+		top: -1px;
+	}
 }
 
 /* Sidebar nav */
