@@ -39,7 +39,7 @@ $ export CONJUR_ACCOUNT=mycorp
 
 
 {% include toc.md key='login' %}
-Login to your new Conjur test server.
+Once you have setup your server and client, login to Conjur:
 
 {% highlight shell %}
 $ conjur authn login admin
@@ -48,15 +48,15 @@ Logged in
 {% endhighlight %}
 
 
-Once you have setup your server and CLI, make sure you are logged in as the admin user:
+And finally, make sure you are logged in as the admin user:
 
 {% highlight shell %}
 $ conjur authn whoami
 { "account": "mycorp", "user": "admin" }
 {% endhighlight %}
 
-# Next Steps
-Now that you've got Conjur up & running, check out the Tutorials and Documentation.
+## Next Steps
+Now that you're up & running with Conjur, check out the [Tutorials](https://possum-cpanel-ci-conjur.herokuapp.com/) and [Documentation](https://possum-cpanel-ci-conjur.herokuapp.com/) sections to learn more about:
 * [Machine Identity](https://possum-cpanel-ci-conjur.herokuapp.com/)
 * [Policies](https://possum-cpanel-ci-conjur.herokuapp.com/)
 * [Integrations](https://possum-cpanel-ci-conjur.herokuapp.com/)

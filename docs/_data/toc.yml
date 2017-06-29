@@ -16,7 +16,7 @@
 
 "/get-started.html":
   client: Install the Conjur Client
-  server: Create a Hosted Conjur Account
+  server: Create a Conjur Account
   login: Login
 
 "/reference/policy.html":

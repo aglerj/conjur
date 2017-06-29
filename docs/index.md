@@ -3,9 +3,9 @@ title: Community Edition
 layout: home
 ---
 
-# Conjur is the security service for modern infrastructure:
+![Conjur Machine Identity](/img/conjur_docs_graphic.svg){:class="landing-img img-responsive"}
 
-<!-- ![Conjur Machine Identity](/img/conjur_docs_graphic.svg){:class="landing-img img-responsive"} -->
+# Conjur is the security service for modern infrastructure:
 
 ### Machine Identity
 
