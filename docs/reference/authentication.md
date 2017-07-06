@@ -1,6 +1,6 @@
 ---
 title: Reference - Authentication
-layout: page
+layout: reference
 ---
 
 Conjur authentication is based on auto-expiring tokens, which are issued by Conjur when presented with both:

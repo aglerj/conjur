@@ -1,6 +1,6 @@
 ---
 title: Reference - Policies
-layout: page
+layout: reference
 ---
 
 {% include toc.md key='introduction' %}
