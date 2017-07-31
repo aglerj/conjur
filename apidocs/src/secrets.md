@@ -25,7 +25,6 @@ curl -H "$(conjur authn authenticate -H)" \
 | Code | Description                             |
 |------|-----------------------------------------|
 |  201 | The secret value was added successfully |
-|      |                                         |
 
 + Parameters
   + account: cyberark (string) - organization name
@@ -91,13 +90,13 @@ fetching the values one by one.
 |  422 | variable_id parameter is missing or invalid                      |
 
 + Parameters
-  + variable_id: cucumber:variable:secret1,cucumber:variable:secret2 (array) - Resource IDs of the variables containing the secrets you wish to retrieve.
+  + variable_id: cucumber:variable:secret,cucumber:variable:secret%2Cwith%2Ccommas (comma-separated list) - Resource IDs of the variables containing the secrets you wish to retrieve. Any commas within resource IDs will need to be escaped to prevent them from acting as delimiters.
 
 + Response 200 (application/json)
 
     ```
     {
-        "cucumber:variable:secret1": "secret_data",
-        "cucumber:variable:secret2": "more_secret_data"
+        "cucumber:variable:secret": "secret_data",
+        "cucumber:variable:secret,with,commas": "more_secret_data"
     }
     ```
