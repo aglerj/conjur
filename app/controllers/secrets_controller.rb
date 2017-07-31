@@ -41,10 +41,19 @@ class SecretsController < RestController
   end
 
   def batch
-    raise ArgumentError, 'variable_ids' if params[:variable_ids].blank?
-
-    variable_ids = params[:variable_ids].split(',').compact
-
+    # We must parse the URL parameters manually here to ensure that any resource
+    # IDs from the variable_ids param that include commas are parsed correctly.
+    begin
+      variable_ids =
+        request.query_string.
+          split('&').map { |v| v.split('=') }.
+          to_h["variable_ids"].
+          split(',').
+          map { |v| URI.decode(v) }
+    rescue
+      raise ArgumentError, 'variable_ids'
+    end
+    
     raise ArgumentError, 'variable_ids' if variable_ids.blank?
     
     variables = Resource.where(resource_id: variable_ids).eager(:secrets).all
@@ -57,12 +66,12 @@ class SecretsController < RestController
     result = {}
 
     authorize_many variables, :execute
-    
+
     variables.each do |variable|
       if variable.secrets.last.nil?
         raise Exceptions::RecordNotFound, variable.resource_id
       end
-      
+
       result[variable.resource_id] = variable.secrets.last.value
     end
 
