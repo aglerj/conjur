@@ -50,7 +50,7 @@ class SecretsController < RestController
           to_h["variable_ids"].
           split(',').
           map { |v| URI.decode(v) }
-    rescue
+    rescue StandardError => e
       raise ArgumentError, 'variable_ids'
     end
     
