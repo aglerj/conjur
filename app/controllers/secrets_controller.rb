@@ -41,15 +41,19 @@ class SecretsController < RestController
   end
 
   def batch
-    # We must parse the URL parameters manually here to ensure that any resource
-    # IDs from the variable_ids param that include commas are parsed correctly.
     begin
       variable_ids =
-        request.query_string.
-          split('&').map { |v| v.split('=') }.
-          to_h["variable_ids"].
-          split(',').
-          map { |v| URI.decode(v) }
+        if request.query_string.include?('variable_ids[]')
+          # Resource IDs passed with Rails list format are parsed correctly.
+          params["variable_ids"]
+        else
+          # Parse URL params manually to ensure commas are handled correctly.
+          request.query_string.
+            split('&').map { |v| v.split('=') }.
+            to_h["variable_ids"].
+            split(',').
+            map { |v| URI.decode(v) }
+        end
     rescue StandardError => e
       raise ArgumentError, 'variable_ids'
     end

@@ -18,10 +18,19 @@ Feature: Batch retrieval of secrets
   Scenario: Handles resource IDs that include a comma
     Given I create a new "variable" resource called "secret,with,commas"
     And I add the secret value "s4" to the resource "cucumber:variable:secret,with,commas"
-    When I GET "/secrets?variable_ids=cucumber:variable:secret%2Cwith%2Ccommas"
+    When I GET "/secrets?variable_ids=cucumber:variable:secret1,cucumber:variable:secret%2Cwith%2Ccommas"
     Then the JSON should be:
     """
-    { "cucumber:variable:secret,with,commas": "s4" }
+    { "cucumber:variable:secret1": "s1", "cucumber:variable:secret,with,commas": "s4" }
+    """
+
+  Scenario: Handles resource IDs passed in Rails list format
+    Given I create a new "variable" resource called "secret,with,commas"
+    And I add the secret value "s4" to the resource "cucumber:variable:secret,with,commas"
+    When I GET "/secrets?variable_ids[]=cucumber:variable:secret1&variable_ids[]=cucumber:variable:secret,with%2Ccommas"
+    Then the JSON should be:
+    """
+    { "cucumber:variable:secret1": "s1", "cucumber:variable:secret,with,commas": "s4" }
     """
 
   Scenario: Fails with 422 if variable_ids param is missing
