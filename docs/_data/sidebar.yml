@@ -38,7 +38,7 @@ main:
             path: /tutorials/policy/delegation.html
 
       runtime:
-        title: Runtime Solutions
+        title: Integrations
         path: /tutorials/integrations/
         items:
           ruby:

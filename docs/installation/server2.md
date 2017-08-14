@@ -1,10 +1,5 @@
----
-title: Installation - Server
-layout: page
----
-
 The Server utilizes a 2-tier architecture, consisting of a stateless API server and a Postgresql backend. 		 
-There are several options for running the server.
+ There are several options for running the server.
 
 {% include toc.md key='hosted' %}
 
