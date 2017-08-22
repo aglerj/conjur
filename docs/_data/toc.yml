@@ -45,7 +45,7 @@
       docker: Run in Docker
       source: Run from Source
   configure:
-    title: Configure
+    title: Configure the CLI
     sections:
       environment: Using the Environment
       conjur-init: Using Files
