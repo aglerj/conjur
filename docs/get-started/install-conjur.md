@@ -1,5 +1,5 @@
 ---
-title: Install Conjur CLI
+title: Install Conjur
 layout: page
 section: get-started
 ---
@@ -13,7 +13,7 @@ If you don't have Docker installed, you can download it here:
 
 ## Download & Run the CLI
 You can easily download and run the Conjur CLI (command line interface) using
-the [official container on DockerHub][dockerhub].
+the [official container on DockerHub](https://hub.docker.com/r/cyberark/conjur/).
 
 * Run `docker pull cyberark/conjur`
 * Launch a Conjur container:
@@ -40,10 +40,10 @@ trust to Conjur with one of the following:
 * **CONJUR_CERT_FILE** The path to the certificate file on disk.
 
 <div class="note">
-  <strong>Note</strong>
+  <em><strong>Note</strong>
   Certificate configuration is not required if you are running Conjur in dev
   mode without HTTPS, or if you are running Conjur with HTTPS and the
-  certificate is already trusted by your operating system.
+  certificate is already trusted by your operating system.</em>
 </div>
 
 You can configure a shell session for the CLI by exporting the variables shown
@@ -60,8 +60,7 @@ Logged in
 <!-- {% include toc.md key='login' %} -->
 
 ## Login
-Once you've downloaded the CLI, you'll login to Conjur. If you started
-the server yourself, you'll need the `admin` API key or password. If
+You'll need the `admin` API key or password to login to Conjur. If
 someone else is managing the Conjur server, they will provide you with
 your login information.
 

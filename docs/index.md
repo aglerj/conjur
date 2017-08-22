@@ -11,6 +11,8 @@ redirect_from: "/start"
     {% include cta.md id='hosted' %}
 </div>
 
+# Conjur Features
+
 {% include toc.md key='machine-identity' %}
 
 Machine Identity is the heart of CyberArk Conjur. It was designed from the ground up to support security automation workflows of all kinds - secrets management, SSH, traffic authorization, container environments, configuration management, and custom access control scenarios.

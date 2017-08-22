@@ -40,7 +40,7 @@
 
 "/get-started/install-conjur-cli.html":
   get:
-    title: Get the Client
+    title: Get the CLI
     sections:
       docker: Run in Docker
       source: Run from Source
