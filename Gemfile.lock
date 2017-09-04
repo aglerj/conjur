@@ -24,12 +24,13 @@ GIT
 
 GIT
   remote: https://github.com/conjurinc/conjur-rack.git
-  revision: c82a886e4e6e90df4c7de347b007cc8fe0b5c1b6
+  revision: 244f4127713758ce2efde2b14e045a241dc2e91f
+  branch: feature/jwt
   specs:
-    conjur-rack (3.0.0.pre)
+    conjur-rack (3.1.0)
       conjur-api (< 6)
       rack (~> 1)
-      slosilo
+      slosilo (~> 2.1)
 
 GIT
   remote: https://github.com/cyberark/api-ruby.git
@@ -38,6 +39,13 @@ GIT
     conjur-api (5.0.0.pre)
       activesupport
       rest-client
+
+GIT
+  remote: https://github.com/cyberark/slosilo.git
+  revision: 4132657c09d089e9625a5c5237dc511fe8fb1548
+  branch: feature/jwt
+  specs:
+    slosilo (2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -440,7 +448,6 @@ GEM
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
     slop (3.6.0)
-    slosilo (2.0.1)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-commands-cucumber (1.0.1)
@@ -489,7 +496,7 @@ DEPENDENCIES
   conjur-cli!
   conjur-debify
   conjur-policy-parser!
-  conjur-rack!
+  conjur-rack (~> 3.1)!
   conjur-rack-heartbeat
   cucumber
   database_cleaner
@@ -519,7 +526,7 @@ DEPENDENCIES
   sequel-postgres-schemata
   sequel-rails
   simplecov
-  slosilo (>= 2.0.0)
+  slosilo (~> 2.1)!
   spring
   spring-commands-cucumber
   spring-commands-rspec
@@ -527,4 +534,4 @@ DEPENDENCIES
   therubyracer
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
